@@ -1,0 +1,72 @@
+.blob-video-wrapper {
+    overflow: hidden;
+    animation: biani 4.5s linear infinite alternate;
+    width: 95%;
+    height: 100%;
+}
+
+.blob-video {
+    height: 100%;
+    width: 100%;
+    box-shadow: 0 0px 20px rgba(36, 39, 37, 0.3);
+}
+
+@keyframes biani {
+    0% {
+        border-radius: 48% 52% 57% 43% / 34% 44% 56% 66%;
+    }
+
+    25% {
+        border-radius: 62% 38% 64% 36% / 34% 55% 45% 66%;
+    }
+
+    50% {
+        border-radius: 43% 57% 51% 49% / 33% 42% 58% 67%;
+    }
+
+    100% {
+        border-radius: 48% 60% 43% 57% / 52% 32% 68% 48%;
+    }
+}
+
+@-webkit-keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.animated-gradient {
+    /* background: radial-gradient(circle, #5190ea, #d5cac4, #ffddb7); */
+    background-size: 200% 200%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    /* Explicitly set text fill color for Safari */
+    -webkit-animation: gradient 10s ease-in-out alternate infinite;
+    animation: gradient 10s ease-in-out alternate infinite;
+}
